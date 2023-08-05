@@ -1,12 +1,18 @@
 <div>
+    
+  <div id="tituloPelis">
     <h2>Ironhack Cinema</h2>
     <h3>Click on the movie to check the showtimes!</h3>
-
+  </div>
+  <div class="containerGeneral">
     {{#each movie}}
-    <div>
-     <a href="/movie/{{_id}}"><img src="{{image}}" alt="Imagen"></a>
-    <a href="/movie/{{_id}}">{{title}}</a>
-    <a href="/movie/{{_id}}">See more</a>
-   </div>
+      <div class="peliculas">
+
+        <a href="/movie/{{_id}}"><img src="{{image}}" alt="Imagen" /></a>
+        <a href="/movie/{{_id}}"><h4>{{title}}</h4></a>
+        <a href="/movie/{{_id}}">See more</a>
+      </div>
     {{/each}}
+  </div>
+
 </div>
